@@ -1,0 +1,56 @@
+body{
+    text-align: center;
+    background: #232323;
+   
+}
+h1{
+margin-bottom: 100px;
+font-family:sans-serif;
+letter-spacing: 5px;
+color:#71e110;
+}
+.svg-button{
+    position: relative;
+    top:50%;
+    margin: 0 auto;
+    width:320px;
+    height:60px;
+    transform:translateY(-50%);
+}
+svg{
+    width:320px;
+    height:60px;
+}
+rect{
+    height:60px;
+    width:320px;
+    stroke-dasharray:140px 540px;
+    stroke-dashoffset: 207px;
+    stroke-width: 8px;
+    fill:transparent;
+    stroke:#71e110;
+    border-bottom: 5px solid #000;
+    transition: all 1s ;
+}
+.text{
+    position: absolute;
+    top:11px;
+    right:80px;
+    font-family:sans-serif;
+    font-size: 22px;
+    line-height:32px;
+    letter-spacing:8px;
+    color:#fff;
+    cursor:pointer;
+    transition:0.8s;
+}
+.svg-button:hover rect{
+    stroke-width:2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 90 0;
+}
+.svg-button:hover .text{
+    color:#71e110;
+    transition :0.8s;
+
+}
